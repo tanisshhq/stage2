@@ -5,14 +5,10 @@ import TransactionForm from '@/components/TransactionForm';
 import TransactionList from '@/components/TransactionList';
 import MonthlyBarChart from '@/components/MonthlyBarChart';
 import CategoryPieChart from '../components/ui/CategoryPieChart';
+import { Transaction } from '@/types/Transaction';
 
-type Transaction = {
-  _id: string;
-  description: string;
-  amount: number;
-  date: string;
-  category: string;
-};
+
+
 
 export default function HomePage() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);

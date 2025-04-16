@@ -1,13 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { Transaction } from '@/types/Transaction';
 
-type Transaction = {
-  _id: string;
-  description: string;
-  amount: number;
-  date: string;
-};
+
 
 interface TransactionListProps {
   refresh: boolean;
